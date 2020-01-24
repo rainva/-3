@@ -12,17 +12,20 @@ var value =+prompt("Введите число для высоты треугол
 var simbol=prompt("введите символ для треугольника","");
 
 if(simbol.length==1){
-	showMessage();}
-else{confirm("Введите только * или #");}
-	function showMessage(){
 	var str = " "; 
 	var star = simbol; 
-
+}else{
+ confirm("Введите только * или #");
+ var value =+prompt("Введите число для высоты треугольника","");
+var simbol=prompt("введите символ для треугольника","");
+ }
+ var str = " "; 
+	var star = simbol;
 for(var i = 0; i < value; i++){ 
 	str += star; 
 	console.log(str); 
- }
-}
+};
+	
  </script>
 </body>
 
